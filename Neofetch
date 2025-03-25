@@ -1,0 +1,61 @@
+# Advanced Neofetch Configuration
+# Elegant, Artistic System Presentation
+
+print_info() {
+    
+    prin "╭─────────────────────────────────────────╮"
+    
+   
+    prin "${cl6}❖ ${cl4}System Insights ${cl6}❖"
+    
+   
+    info "${cl1}🖥️  OS" distro
+    info "${cl2}🧊 Kernel" kernel
+    info "${cl3}⏰ Uptime" uptime
+    info "${cl4}📦 Packages" packages
+    info "${cl5}🐚 Shell" shell
+    info "${cl6}💻 Resolution" resolution
+    
+    
+    info "${cl1}🔧 CPU" cpu
+    info "${cl2}💾 Memory" memory
+    info "${cl3}🎨 GPU" gpu
+    
+    # Artistic Closing
+    prin "╰─────────────────────────────────────────╯"
+}
+
+
+cl1="\033[38;5;204m"  # Coral Pink
+cl2="\033[38;5;39m"   # Vibrant Blue
+cl3="\033[38;5;190m"  # Bright Lime Green
+cl4="\033[38;5;135m"  # Soft Purple
+cl5="\033[38;5;208m"  # Orange
+cl6="\033[38;5;141m"  # Lavender
+
+
+title_fqdn="off"
+kernel_shorthand="on"
+distro_shorthand="off"
+os_arch="off"
+uptime_shorthand="on"
+memory_percent="on"
+memory_display="infobar"
+cpu_display="infobar"
+battery_display="infobar"
+
+
+block_range=(0 15)
+color_blocks="on"
+block_width=4
+block_height=2
+
+
+image_backend="ascii"
+image_source="auto"
+ascii_distro="auto"
+ascii_colors=(distro)
+ascii_bold="on"
+
+
+stdout="off"
